@@ -1,0 +1,16 @@
+body { 
+  margin: 1cm 3cm;
+}
+
+h1 {
+  border: solid 5px green;
+  margin: 5px 0;
+  background-color: silver;
+}
+
+p {
+  margin: 2px 0;
+  padding: 2px;
+  border: solid gray;
+  border-width: thin thick;
+}
