@@ -1,0 +1,13 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <body>
+    <script>
+      function showTime() {
+        let d = new Date();
+        let v = d.toLocaleString();
+        alert(v);
+      }
+      setInterval(showTime, 5 * 60 * 1000);
+    </script>
+  </body>
+</html>
