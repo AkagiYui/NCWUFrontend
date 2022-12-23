@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <body>
+    <input type="text" id="box" />
+    <button onclick="func()">Run</button>
+    <p id="result"></p>
+    <script type="text/javascript">
+      function func() {
+        let v = document.getElementById('box').value;
+        // 计算 平方 平方根 自然对数
+        v =  v * v + ' ' + Math.sqrt(v) + ' ' + Math.log(v);
+        document.getElementById('result').innerHTML = v;
+      }
+    </script>
+  </body>
+</html>

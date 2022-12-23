@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <body>
+    <p id="result"></p>
+    <script type="text/javascript">
+      months = new Array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+      function IsLeapYear(y) {
+        return (y % 4 == 0 && y % 100 != 0) || y % 400 == 0;
+      }
+      function DayOfYear(d) {
+        let m = d.getMonth();
+        let y = d.getFullYear();
+        let days = d.getDate();
+        for (let i = 0; i < m; i++) {
+          days += months[i];
+        }
+        if (m > 1 && IsLeapYear(y)) {
+          days++;
+        }
+        return days;
+      }
+
+      let d = new Date();
+      let v = '今天是' + d.getFullYear() + '年的第' + DayOfYear(d) + '天';
+      document.getElementById('result').innerHTML = v;
+    </script>
+  </body>
+</html>

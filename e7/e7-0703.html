@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <body>
+    <p id="result"></p>
+    <script type="text/javascript">
+      let d = new Date();
+      let v =
+        "现在是"
+        + d.getFullYear() + "年"
+        + (d.getMonth() + 1) + "月"
+        + d.getDate() + "日 "
+        + d.getHours() + "点"
+        + d.getMinutes() + "分"
+        + d.getSeconds() + "秒（星期" 
+        + d.getDay() + "），欢迎您的到访！";
+      document.getElementById("result").innerHTML = v;
+    </script>
+  </body>
+</html>
