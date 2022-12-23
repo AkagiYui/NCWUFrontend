@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <body>
+    <script type="text/javascript">
+      // 使用非递归实现阶乘
+      function Factorial(int) {
+        let result = 1;
+        for (let i = 1; i <= int; i++) {
+          result *= i;
+        }
+        return result;
+      }
+      // 打印 12!-10! 的结果
+      document.write(Factorial(12) - Factorial(10));
+    </script>
+  </body>
+</html>

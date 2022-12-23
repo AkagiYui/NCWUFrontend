@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <body>
+    <input type="text" id="age" />
+    <button onclick="checkAge()">Check</button>
+    <p id="result"></p>
+    <script type="text/javascript">
+      function checkAge() {
+        let age = document.getElementById('age').value;
+        let result = document.getElementById('result');
+        if (age < 14) {
+          result.innerHTML = '儿童';
+        } else if (age < 24) {
+          result.innerHTML = '青少年';
+        } else if (age < 40) {
+          result.innerHTML = '青年';
+        } else if (age < 60) {
+          result.innerHTML = '中年';
+        } else {
+          result.innerHTML = '老年';
+        }
+      }
+    </script>
+  </body>
+</html>

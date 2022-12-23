@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <body>
+    <script type="text/javascript">
+      function canDiv(int) {
+        return int % 3 === 0 && int % 5 === 0 && int % 7 === 0;
+      }
+      // print number from 1 to 1000, each line 6 numbers
+      let count = 0;
+      for (let i = 1; i <= 1000; i++) {
+        if (canDiv(i)) {
+          document.write(i + ' ');
+          count++;
+          if (count % 6 === 0) {
+            document.write('<br />');
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

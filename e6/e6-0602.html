@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <body>
+    <input type="text" id="boxA" />
+    <input type="text" id="boxB" />
+    <button onclick="Min()">Run</button>
+    <p id="result"></p>
+    <script type="text/javascript">
+      function Min() {
+        let a = parseInt(document.getElementById('boxA').value);
+        let b = parseInt(document.getElementById('boxB').value);
+        document.getElementById('result').innerHTML = a < b ? a : b;
+      }
+    </script>
+  </body>
+</html>

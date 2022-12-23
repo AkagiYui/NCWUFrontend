@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <body>
+    <script type="text/javascript">
+      // 取 1元、2元和5元纸币一共10张，组成18元的所有组合
+      for (let i = 0; i <= 10; i++) {
+        for (let j = 0; j <= 10; j++) {
+          for (let k = 0; k <= 10; k++) {
+            if (i + j + k === 10 && i * 1 + j * 2 + k * 5 === 18) {
+              document.write(`1元纸币${i}张，2元纸币${j}张，5元纸币${k}张<br />`);
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

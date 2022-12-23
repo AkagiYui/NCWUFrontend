@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <body>
+    <input type="text" id="box" />
+    <button onclick="func()">Run</button>
+    <p id="result"></p>
+    <script type="text/javascript">
+      function func() {
+        let v = document.getElementById('box').value;
+        document.getElementById('result').innerHTML = f(parseInt(v));
+      }
+      function f(v) {
+        return 4 * v * v + 3 * v + 2;
+      }
+    </script>
+  </body>
+</html>
