@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>COVID-19 新冠肺炎</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+  <script src="js/addNavbar.js"></script>
+</head>
+<body>
+<!-- JS效果轮播图 -->
+<div class="slideshow">
+  <img src="image/image1.png" alt="Slideshow Image 1" class="active">
+  <img src="image/image2.png" alt="Slideshow Image 2">
+  <img src="image/image3.png" alt="Slideshow Image 3">
+</div>
+
+  <!-- Form表单 -->
+  <div class="report">
+    <h2>报告病例</h2>
+    <form action="submit" onsubmit="return sendRequest()">
+      <label for="name">姓名:</label>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">电子邮件:</label>
+      <input type="email" id="email" name="email"><br>
+      <label for="location">位置:</label>
+      <input type="text" id="location" name="location"><br>
+      <input type="submit" value="提交">
+    </form>
+  </div>
+</body>
+</html>
